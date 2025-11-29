@@ -1,0 +1,122 @@
+.header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px var(--shadow-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.header-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: var(--text-header);
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    color: var(--text-header-secondary);
+    margin: 0 0 30px 0;
+    font-weight: 400;
+    position: relative;
+}
+
+.header-contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-header-secondary);
+    font-size: 0.95rem;
+}
+
+.contact-icon {
+    font-size: 18px;
+    color: var(--text-header-secondary);
+}
+
+.contact-item a {
+    color: var(--text-header-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--text-header);
+}
+
+.header-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.social-icon {
+    font-size: 20px;
+    color: var(--text-header);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 15px 30px;
+    }
+
+    .header-name {
+        font-size: 2rem;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .header-contact {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+}

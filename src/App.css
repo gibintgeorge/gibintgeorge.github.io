@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root[data-theme="light"] {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-tertiary: #6c757d;
+    --text-header: #ffffff;
+    --text-header-secondary: rgba(255, 255, 255, 0.9);
+    --accent-color: #2563eb;
+    --gradient-start: #3b82f6;
+    --gradient-end: #8b5cf6;
+    --border-color: #e5e7eb;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --tag-bg: #eff6ff;
+    --tag-text: #1e40af;
+    --tag-border: #bfdbfe;
+    --tag-hover-bg: #dbeafe;
+    --tag-hover-text: #1e3a8a;
+}
+
+:root[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    --text-header: #ffffff;
+    --text-header-secondary: rgba(255, 255, 255, 0.9);
+    --accent-color: #3b82f6;
+    --gradient-start: #4f46e5;
+    --gradient-end: #7c3aed;
+    --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --tag-bg: #1e3a8a;
+    --tag-text: #bfdbfe;
+    --tag-border: #1e40af;
+    --tag-hover-bg: #1e40af;
+    --tag-hover-text: #dbeafe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-end);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+    background: var(--accent-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding: 20px 10px;
+    }
+}

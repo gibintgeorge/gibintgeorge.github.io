@@ -1,0 +1,134 @@
+{
+  "personalInfo": {
+    "name": "Gibin Thattayath George",
+    "title": "Senior Frontend Engineer",
+    "location": "Cincinnati, OH",
+    "email": "contactgibin@gmail.com",
+    "phone": "513-488-2979",
+    "linkedin": "https://linkedin.com/in/gibintgeorge",
+    "github": "https://github.com/gibintgeorge"
+  },
+  "summary": "Senior Frontend Engineer with 10+ years of experience delivering scalable, high-performance enterprise applications across banking and logistics domains. Specialized in React.js, Next.js, and TypeScript, and possess current, extensive hands-on experience with both React (front end) and Node.js (back end). Deep expertise in Micro Frontend Architecture for modular, maintainable, and independently deployable UI components, and experience integrating microservice-style back-end services. Led modernization initiatives across legacy systems, including OAuth onboarding, ACH cancellation workflows, and MFA flows, while leveraging AI-assisted tools like GitHub Copilot to accelerate development and debugging. Strong background in test automation (Jest, RTL, Playwright), accessibility (Axe Auditor), and cloud-native delivery on GCP, with current experience transitioning applications to Azure. Comfortable contributing to backend services using Java and Spring Boot. Known for leading cross-functional teams, mentoring developers, driving UX and performance improvements, and owning modules from design through deployment (full SDLC).",
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React.js", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS", "Redux", "Zustand", "React Context", "Micro Frontends", "Design Systems"]
+    },
+    {
+      "category": "Full Stack / Microservices",
+      "items": ["React (front end)", "Node.js (back end)", "Micro Frontend architectures", "microservice-style integrations", "Agile environments"]
+    },
+    {
+      "category": "Accessibility",
+      "items": ["WCAG Compliance", "Axe Auditor"]
+    },
+    {
+      "category": "Testing",
+      "items": ["Jest", "React Testing Library", "Playwright", "TDD", "CI-integrated Testing Pipelines"]
+    },
+    {
+      "category": "Backend & Tools",
+      "items": ["Node.js", "Express.js", "MongoDB", "REST APIs", "Puppeteer", "Web Workers", "NPM", "Webpack", "Babel"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["Google Cloud Platform (GCP)", "Azure (basic)", "Git", "GitHub Actions", "Jira", "CI/CD Pipelines"]
+    },
+    {
+      "category": "Legacy Tech",
+      "items": ["C#", "ASP.NET", "SQL Server", "SSIS", "PowerBuilder", "Oracle"]
+    },
+    {
+      "category": "Collaboration & Leadership",
+      "items": ["Agile/Scrum", "Offshore Coordination", "Mentorship", "Code Reviews", "Stakeholder Communication", "Feature Scoping", "Release Planning"]
+    },
+    {
+      "category": "AI-Assisted Development",
+      "items": ["AI-powered coding tools", "Refactor legacy code", "Resolve complex bugs"]
+    },
+    {
+      "category": "Security",
+      "items": ["OAuth 2.0 (3-legged)", "MFA", "Reauthentication Flows"]
+    },
+    {
+      "category": "Other",
+      "items": ["Basic Java (Spring Boot)", "Performance Optimization", "Worker threads", "Lazy Loading", "Bundle Splitting"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Assistant Consultant",
+      "company": "Tata Consultancy Services (TCS)",
+      "location": "Cincinnati, OH",
+      "period": "Dec 2023 – Present",
+      "highlights": [
+        "Implemented 3-legged OAuth onboarding for external applications, enabling secure access to customer accounts, transfers, and statements.",
+        "Modernized the ACH transaction cancellation module, completing development within 2 months by leveraging GitHub Copilot to accelerate coding and reduce implementation time.",
+        "Maintained and enhanced multi-factor authentication (MFA) for the application, including reauthentication flows for protected modules to ensure secure and seamless user access.",
+        "Analyzed and resolved production issues in a legacy Java Struts application, improving system stability and performance.",
+        "Utilized a modern tech stack including React.js, SCSS modules, Java Spring Boot, and testing tools like Jest, React Testing Library, Playwright, and Axe Auditor to ensure quality, accessibility, and reliability. Worked with Node.js-based back-end integrations and delivered features through the full SDLC in Agile teams, collaborating closely with UX and cross-functional stakeholders.",
+        "Spearheaded the implementation of Micro Frontend Architecture for treasury management and payment system, enabling independent deployment of UI modules and reducing integration overhead by 40%.",
+        "Led end-to-end modernization of the internal account transfer module, improving load speed by 60% and reducing user-reported errors by 40%.",
+        "Functioned as Senior UI Developer and Offshore Coordinator, managing delivery across time zones and aligning teams with enterprise goals."
+      ]
+    },
+    {
+      "role": "IT Analyst",
+      "company": "Tata Consultancy Services (TCS)",
+      "location": "Kochi, Kerala",
+      "period": "Sep 2021 – Nov 2023",
+      "highlights": [
+        "Modernized the User Management module in the Treasury and Payment Services platform using React.js and SCSS, implementing Micro Frontend Architecture to decouple features and enable independent deployments—resulting in a 25% boost in task completion and 15% reduction in user errors. Delivered this work through the full SDLC using Agile/Scrum practices and close collaboration with product, QA and UX teams.",
+        "Refactored legacy interfaces using React.js, JavaScript, HTML5, and SCSS modules, delivering responsive and accessible UIs aligned with WCAG standards. Integrated React Testing Library for robust unit testing and used Zustand for efficient state management across components.",
+        "Mentored 3 junior developers, conducted regular code reviews, and enforced linting and testing standards—resulting in improved code maintainability and faster onboarding for new team members.",
+        "Collaborated with product owners and QA teams to ensure UI behavior aligned with user stories and acceptance criteria, resulting in smoother feature delivery and fewer post-release adjustments."
+      ]
+    },
+    {
+      "role": "Systems Analyst",
+      "company": "UST",
+      "location": "Kochi, Kerala",
+      "period": "Jun 2020 – Sep 2021",
+      "highlights": [
+        "Created multiple reusable NPM libraries (Node.js) for rendering and generating PDF reports, including Anti-Money Laundering (AML) and First Choice reports.",
+        "Optimized PDF rendering performance by offloading intensive tasks to Web Workers, enabling users to download reports with significantly reduced wait times and smoother experience.",
+        "Developed a customizable reporting solution called OneView, which was publicly recognized in industry publications and is actively used via the Equifax OneView portal, demonstrating strong market adoption and real-world impact.",
+        "Built dynamic components using React.js and SCSS modules, ensuring seamless integration into client ecosystems and integrating with Node.js-based services where applicable.",
+        "Built and maintained automated unit testing workflows using Jest and Enzyme, helping catch regressions early and boosting release reliability across multiple components.",
+        "Improved performance of PDF generation by offloading heavy rendering tasks to Web Workers."
+      ]
+    },
+    {
+      "role": "Project Engineer",
+      "company": "Wipro",
+      "location": "Kochi, Kerala",
+      "period": "Sep 2014 – May 2020",
+      "highlights": [
+        "Designed and developed a custom billing reconciliation platform using React.js, Node.js, and MongoDB, enabling accurate credit note generation and reducing billing mismatches across logistics operations.",
+        "Collaborated directly with billing teams to centralize dispute communication, improving resolution speed, audit traceability, and reducing manual overhead.",
+        "Owned development and support of a legacy billing system built with C#, ASP.NET, SSIS, and SQL Server, ensuring business continuity and data integrity during high-volume financial operations.",
+        "Built and optimized SSIS packages and SQL procedures to automate data flows, reconcile billing records, and support reporting needs for finance and audit teams.",
+        "Handled production support and issue triage, deploying hotfixes, resolving data discrepancies, and maintaining SLAs in coordination with QA and business stakeholders.",
+        "Documented workflows, support procedures, and technical debt, enabling smoother onboarding and reducing knowledge silos across teams.",
+        "Participated in cross-functional planning, contributing to feature scoping, release coordination, and long-term system reliability.",
+        "Developed and maintained a desktop application for Domtar's pulp processing operations using PowerBuilder, C++, and Oracle, supporting mission-critical workflows in a manufacturing environment.",
+        "Enhanced and debugged legacy components, ensuring system stability and performance in a high-throughput industrial setting.",
+        "Performed manual testing for the 1800Flowers e-commerce platform, validating UI flows, order processing, and backend data consistency across multiple test scenarios."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Tech, Software Engineering",
+      "institution": "Birla Institute of Technology & Science (BITS Pilani)",
+      "location": "Rajasthan",
+      "year": "2018"
+    },
+    {
+      "degree": "Bachelor of Computer Applications",
+      "institution": "CET College of Management, Science & Technology",
+      "location": "Kerala",
+      "year": "2014"
+    }
+  ]
+}
