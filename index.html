@@ -1,92 +1,357 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gibin T George | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          animation: {
-            fadeIn: "fadeIn 1.5s ease-out",
-            slideUp: "slideUp 1s ease-out"
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: 0 },
-              '100%': { opacity: 1 },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(20px)', opacity: 0 },
-              '100%': { transform: 'translateY(0)', opacity: 1 },
-            },
-          }
-        }
+  <meta charset="UTF-8">
+  <title>Gibin Thattayath
+    George - Resume</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    @page {
+      margin-top: 16px;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text
+    }
+
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 14px 14px
+    }
+
+    h1 {
+      font-size: 1.35em;
+      margin: 0 0 .15em 0;
+      color: #111;
+      font-weight: 700;
+      letter-spacing: .5px
+    }
+
+    .contact {
+      margin-bottom: .8em;
+      color: #222;
+      font-size: 1em
+    }
+
+    .contact a {
+      color: #222;
+      text-decoration: none
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #bbb;
+      margin: .8em 0
+    }
+
+    h2 {
+      color: #111;
+      margin-top: .8em;
+      margin-bottom: .2em;
+      font-size: 1.08em;
+      font-weight: 700;
+      letter-spacing: .5px;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: .08em
+    }
+
+    h3 {
+      margin: .5em 0 .05em 0;
+      font-size: 1em;
+      color: #111;
+      font-weight: 700
+    }
+
+    .role {
+      font-weight: 700
+    }
+
+    .org-loc {
+      color: #222;
+      font-size: .97em;
+      margin-bottom: .05em
+    }
+
+    .period {
+      float: right;
+      color: #444;
+      font-size: .97em;
+      font-style: italic;
+      font-weight: 400
+    }
+
+    ul {
+      margin-top: .05em;
+      margin-bottom: .4em;
+      padding-left: 1em
+    }
+
+    li {
+      margin-bottom: .15em;
+      line-height: 1.22;
+      font-size: .98em
+    }
+
+    .skills-list {
+      margin-bottom: .5em;
+      font-size: .98em;
+      list-style: disc inside;
+      columns: 1
+    }
+
+    .skills-list li {
+      margin-bottom: .08em
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    @media (max-width:600px) {
+      .container {
+        padding: 6px 2px
+      }
+
+      .skills-list {
+        columns: 1
       }
     }
-  </script>
+
+    @media print {
+      .container {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background: 0 0 !important;
+        padding: 4px 4px !important
+      }
+
+      .education {
+        break-inside: avoid;
+        page-break-inside: avoid
+      }
+
+      h2,
+      h3 {
+        page-break-before: auto !important;
+        page-break-after: auto !important
+      }
+
+      .exp-block {
+        break-inside: avoid;
+        page-break-inside: avoid
+      }
+
+      p,
+      ul {
+        page-break-inside: avoid
+      }
+
+
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Hero -->
-  <section class="bg-white shadow p-8 text-center animate-fadeIn">
-    <h1 class="text-4xl font-bold">Gibin Thattayath George</h1>
-    <p class="text-lg mt-2">JavaScript Developer | React.js | Next.js | Node.js</p>
-    <p class="mt-2 text-sm text-gray-600">Loveland, OH</p>
-  </section>  <!-- Summary -->  <section class="max-w-4xl mx-auto p-6 animate-slideUp">
-    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-    <p>
-      Proficient JavaScript developer with extensive experience in React.js, Next.js, and Node.js, coupled with expertise in HTML5, CSS, and SCSS. Skilled in testing frameworks like Jest, React Testing Library, and Playwright. Experienced with Google Cloud and supporting long-term production projects.
-    </p>
-  </section>  <!-- Experience -->  <section class="max-w-4xl mx-auto p-6 bg-white shadow rounded mt-6 animate-slideUp">
-    <h2 class="text-2xl font-semibold mb-4">Experience</h2><div class="mb-4">
-  <h3 class="text-xl font-bold">Assistant Consultant - TCS</h3>
-  <p class="text-sm text-gray-600">Cincinnati, OH | Dec 2023 – Present</p>
-  <ul class="list-disc ml-5 mt-2">
-    <li>Boosted B2B app performance by 20% using React JS.</li>
-    <li>Modernized banking account transfer modules.</li>
-    <li>Led as Senior UI Developer & Offshore Coordinator.</li>
-  </ul>
-</div>
 
-<div class="mb-4">
-  <h3 class="text-xl font-bold">IT Analyst - TCS</h3>
-  <p class="text-sm text-gray-600">Kochi, India | Sep 2021 – Nov 2023</p>
-  <ul class="list-disc ml-5 mt-2">
-    <li>Improved user management and admin modules using React JS.</li>
-    <li>Mentored juniors and conducted code reviews.</li>
-  </ul>
-</div>
-
-<div class="mb-4">
-  <h3 class="text-xl font-bold">Systems Analyst - UST</h3>
-  <p class="text-sm text-gray-600">Kochi, India | Jun 2020 – Sep 2021</p>
-  <ul class="list-disc ml-5 mt-2">
-    <li>Built NPM libraries for report interfaces and PDF generation.</li>
-  </ul>
-</div>
-
-<div class="mb-4">
-  <h3 class="text-xl font-bold">Project Engineer - Wipro</h3>
-  <p class="text-sm text-gray-600">Kochi, India | Sep 2014 – May 2020</p>
-  <ul class="list-disc ml-5 mt-2">
-    <li>Developed UI apps to resolve billing mismatches using React, Node, MongoDB.</li>
-    <li>Earlier systems built in C#, ASP.NET, and SQL Server.</li>
-  </ul>
-</div>
-
-  </section>  <!-- Skills -->  <section class="max-w-4xl mx-auto p-6 mt-6 animate-slideUp">
-    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
-    <p>React.js, JavaScript, HTML5, SCSS, CSS3, Redux, Zustand, Next.js, TypeScript, NPM, Webpack, Express.js, Java, React Testing Library, Jest, C#, Jira, Git, React Hooks</p>
-  </section>  <!-- Education -->  <section class="max-w-4xl mx-auto p-6 mt-6 bg-white shadow rounded animate-slideUp">
-    <h2 class="text-2xl font-semibold mb-4">Education</h2>
-    <ul class="list-disc ml-5">
-      <li><strong>MTech in Software Engineering</strong> – BITS Pilani, Rajasthan – Nov 2018</li>
-      <li><strong>Bachelor of Computer Application</strong> – CET College, Ernakulam – Jun 2014</li>
+<body>
+  <div class="container">
+    <h1>Gibin Thattayath George</h1>
+    <div class="contact">Loveland, OH | <a href="mailto:contactgibin@gmail.com">contactgibin@gmail.com</a> | <a
+        href="tel:513-488-2979">513-488-2979</a></div>
+    <hr>
+    <h2>Summary</h2>
+    <p>Senior Frontend
+      Engineer with 10+ years of experience delivering scalable, high-performance
+      enterprise applications across banking and logistics domains. Specialized in
+      React.js, Next.js, and TypeScript, and possess current, extensive hands-on
+      experience with both <strong>React (front end)</strong> and <strong>Node.js (back end)</strong>.
+      Deep expertise in Micro Frontend Architecture for modular, maintainable, and
+      independently deployable UI components, and experience integrating microservice-style
+      back-end services. Led modernization initiatives across legacy systems, including OAuth
+      onboarding, ACH cancellation workflows, and MFA flows, while leveraging AI-assisted tools like
+      GitHub Copilot to accelerate development and debugging. Strong background in test
+      automation (Jest, RTL, Playwright), accessibility (Axe Auditor), and cloud-native
+      delivery on GCP, with current experience transitioning applications to Azure.
+      Comfortable contributing to backend services using Java and Spring Boot. Known for
+      leading cross-functional teams, mentoring developers, driving UX and performance
+      improvements, and owning modules from design through deployment (full SDLC).</p>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Frontend:</strong>
+        React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3, SCSS, Redux, Zustand, React
+        Context, Micro Frontends, Design Systems</li>
+      <li><strong>Full Stack / Microservices:</strong> Current, extensive hands-on experience with React (front
+        end) and Node.js (back end), Micro Frontend architectures, and microservice-style integrations,
+        delivered in Agile environments.</li>
+      <li><strong>Accessibility:</strong>
+        WCAG Compliance, Axe Auditor</li>
+      <li><strong>Testing:</strong> Jest, React Testing
+        Library, Playwright, TDD, CI-integrated Testing Pipelines</li>
+      <li><strong>Backend &
+          Tools:</strong> Node.js, Express.js, MongoDB, REST APIs, Puppeteer, Web Workers,
+        NPM, Webpack, Babel</li>
+      <li><strong>Cloud & DevOps:</strong> Google Cloud Platform
+        (GCP), Azure (basic), Git, GitHub Actions, Jira, CI/CD
+        Pipelines</li>
+      <li><strong>Legacy Tech:</strong> C#, ASP.NET, SQL Server, SSIS,
+        PowerBuilder, Oracle</li>
+      <li><strong>Collaboration & Leadership:</strong>
+        Agile/Scrum, Offshore Coordination, Mentorship, Code Reviews, Stakeholder
+        Communication, Feature Scoping, Release Planning</li>
+      <li><strong>AI-Assisted
+          Development:</strong> Proficient in using AI-powered coding tools to accelerate
+        development, refactor legacy code, and resolve complex
+        bugs</li>
+      <li><strong>Security:</strong> OAuth 2.0 (3-legged), MFA, Reauthentication
+        Flows</li>
+      <li><strong>Other:</strong> Basic Java (Spring Boot familiarity),
+        Performance Optimization (Worker threads, Lazy Loading, Bundle
+        Splitting)</li>
     </ul>
-  </section>  <!-- Contact -->  <section class="max-w-4xl mx-auto p-6 mt-6 text-center animate-slideUp">
-    <h2 class="text-2xl font-semibold mb-2">Get in Touch</h2>
-    <p>LinkedIn: <a href="https://linkedin.com/in/gibintgeorge" class="text-blue-500" target="_blank">linkedin.com/in/gibintgeorge</a></p>
-  </section>
+    <h2>Experience</h2>
+    <div class="exp-block">
+      <h3><span class="role">Assistant Consultant</span> <span class="period">Dec 2023 –
+          Present</span></h3>
+      <div class="org-loc">Tata Consultancy Services (TCS), Cincinnati,
+        OH</div>
+      <ul>
+        <li>Implemented 3-legged OAuth onboarding for external applications,
+          enabling secure access to customer accounts, transfers, and
+          statements.</li>
+        <li>Modernized the ACH transaction cancellation module, completing
+          development within 2 months by leveraging GitHub Copilot to accelerate coding and
+          reduce implementation time.</li>
+        <li>Maintained and enhanced multi-factor
+          authentication (MFA) for the application, including reauthentication flows for
+          protected modules to ensure secure and seamless user access.</li>
+        <li>Analyzed and
+          resolved production issues in a legacy Java Struts application, improving system
+          stability and performance.</li>
+        <li>Utilized a modern tech stack including React.js, SCSS modules, Java Spring Boot, and testing tools
+          like Jest, React Testing Library, Playwright, and Axe Auditor to ensure quality, accessibility, and
+          reliability. Worked with Node.js-based back-end integrations and delivered features through the full
+          SDLC in Agile teams, collaborating closely with UX and cross-functional stakeholders.</li>
+        <li>Spearheaded the implementation of Micro Frontend Architecture
+          for treasury management and payment system, enabling independent deployment of UI
+          modules and reducing integration overhead by 40%.</li>
+        <li>Led end-to-end
+          modernization of the internal account transfer module, improving load speed by 60%
+          and reducing user-reported errors by 40%.</li>
+        <li>Functioned as Senior UI Developer
+          and Offshore Coordinator, managing delivery across time zones and aligning teams
+          with enterprise goals.</li>
+      </ul>
+    </div>
+    <div class="exp-block">
+      <h3><span class="role">IT Analyst</span> <span class="period">Sep 2021 – Nov
+          2023</span></h3>
+      <div class="org-loc">Tata Consultancy Services (TCS), Kochi,
+        Kerala</div>
+      <ul>
+        <li>Modernized the User Management module in the Treasury and Payment Services platform using React.js
+          and SCSS, implementing Micro Frontend Architecture to decouple features and enable independent
+          deployments—resulting in a 25% boost in task completion and 15% reduction in user errors. Delivered
+          this work through the full SDLC using Agile/Scrum practices and close collaboration with product, QA
+          and UX teams.</li>
+        <li>Refactored
+          legacy interfaces using React.js, JavaScript, HTML5, and SCSS modules, delivering
+          responsive and accessible UIs aligned with WCAG standards. Integrated React Testing
+          Library for robust unit testing and used Zustand for efficient state management
+          across components.</li>
+        <li>Mentored 3 junior developers, conducted regular code
+          reviews, and enforced linting and testing standards—resulting in improved code
+          maintainability and faster onboarding for new team members.</li>
+        <li>Collaborated
+          with product owners and QA teams to ensure UI behavior aligned with user stories and
+          acceptance criteria, resulting in smoother feature delivery and fewer post-release
+          adjustments.</li>
+      </ul>
+    </div>
+    <div class="exp-block">
+      <h3><span class="role">Systems
+          Analyst</span> <span class="period">Jun 2020 – Sep 2021</span></h3>
+      <div class="org-loc">UST, Kochi, Kerala</div>
+      <ul>
+        <li>Created multiple reusable NPM libraries (Node.js) for rendering and generating PDF reports,
+          including Anti-Money Laundering (AML) and First Choice reports.</li>
+        <li>Optimized PDF rendering performance by
+          offloading intensive tasks to Web Workers, enabling users to download reports with
+          significantly reduced wait times and smoother experience.</li>
+        <li>Developed a
+          customizable reporting solution called OneView, which was publicly recognized in
+          industry publications and is actively used via the <a
+            href="https://www.equifax.com/business/product/oneview">Equifax OneView portal</a>,
+          demonstrating strong market adoption and real-world impact.</li>
+        <li>Built dynamic components using React.js and SCSS modules, ensuring seamless integration into client
+          ecosystems and integrating with Node.js-based services where applicable.</li>
+        <li>Built and maintained automated unit testing workflows
+          using Jest and Enzyme, helping catch regressions early and boosting release
+          reliability across multiple components.</li>
+        <li>Improved performance of PDF
+          generation by offloading heavy rendering tasks to Web Workers.</li>
+      </ul>
+    </div>
+    <div class="exp-block">
+      <h3><span class="role">Project Engineer</span> <span class="period">Sep 2014 – May 2020</span></h3>
+      <div class="org-loc">Wipro, Kochi,
+        Kerala</div>
+      <ul>
+        <li>Designed and developed a custom billing reconciliation platform
+          using React.js, Node.js, and MongoDB, enabling accurate credit note generation and
+          reducing billing mismatches across logistics operations.</li>
+        <li>Collaborated
+          directly with billing teams to centralize dispute communication, improving
+          resolution speed, audit traceability, and reducing manual overhead.</li>
+        <li>Owned
+          development and support of a legacy billing system built with C#, ASP.NET, SSIS, and
+          SQL Server, ensuring business continuity and data integrity during high-volume
+          financial operations.</li>
+        <li>Built and optimized SSIS packages and SQL procedures
+          to automate data flows, reconcile billing records, and support reporting needs for
+          finance and audit teams.</li>
+        <li>Handled production support and issue triage,
+          deploying hotfixes, resolving data discrepancies, and maintaining SLAs in
+          coordination with QA and business stakeholders.</li>
+        <li>Documented workflows,
+          support procedures, and technical debt, enabling smoother onboarding and reducing
+          knowledge silos across teams.</li>
+        <li>Participated in cross-functional planning,
+          contributing to feature scoping, release coordination, and long-term system
+          reliability.</li>
+        <li>Developed and maintained a desktop application for Domtar’s
+          pulp processing operations using PowerBuilder, C++, and Oracle, supporting
+          mission-critical workflows in a manufacturing environment.</li>
+        <li>Enhanced and
+          debugged legacy components, ensuring system stability and performance in a
+          high-throughput industrial setting.</li>
+        <li>Performed manual testing for the
+          1800Flowers e-commerce platform, validating UI flows, order processing, and backend
+          data consistency across multiple test
+          scenarios.</li>
+      </ul>
+    </div>
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>M.Tech, Software
+            Engineering</strong><br>Birla Institute of Technology &amp; Science (BITS Pilani),
+          Rajasthan – 2018</li>
+        <li><strong>Bachelor of Computer Applications</strong><br>CET
+          College of Management, Science &amp; Technology, Kerala –
+          2014</li>
+      </ul>
+    </div>
+  </div>
 </body>
+
 </html>
