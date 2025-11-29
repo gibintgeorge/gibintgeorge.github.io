@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiDownload } from 'react-icons/fi';
 import './Header.css';
 
 interface PersonalInfo {
@@ -72,6 +72,16 @@ export const Header = ({ personalInfo }: HeaderProps) => {
                         <FiLinkedin className="social-icon" />
                     </a>
                 )}
+            </motion.div>
+            <motion.div className="header-download" variants={itemVariants}>
+                <a 
+                    href="/GibinGeorgeReact.pdf" 
+                    download="Gibin_George_Resume.pdf"
+                    className="download-button"
+                >
+                    <FiDownload className="download-icon" />
+                    Download Resume
+                </a>
             </motion.div>
         </motion.header>
     );

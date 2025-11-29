@@ -74,6 +74,7 @@
     justify-content: center;
     gap: 20px;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .social-link {
@@ -95,6 +96,37 @@
 .social-icon {
     font-size: 20px;
     color: var(--text-header);
+}
+
+.header-download {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--gradient-start);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-icon {
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {
