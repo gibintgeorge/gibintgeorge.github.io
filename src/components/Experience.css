@@ -57,6 +57,10 @@
     gap: 20px;
 }
 
+.experience-header.non-clickable {
+    cursor: default;
+}
+
 .experience-title-section {
     flex: 1;
 }

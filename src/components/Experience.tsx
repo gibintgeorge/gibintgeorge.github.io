@@ -29,7 +29,10 @@ export const Experience = ({ experience, defaultExpanded = false, linkTo }: Expe
     });
 
     const toggleExpand = (index: number) => {
-        setExpandedIndex(expandedIndex === index ? null : index);
+        // Only allow toggling if not in defaultExpanded mode (i.e., on home page)
+        if (!defaultExpanded) {
+            setExpandedIndex(expandedIndex === index ? null : index);
+        }
     };
 
     const containerVariants = {
@@ -71,7 +74,7 @@ export const Experience = ({ experience, defaultExpanded = false, linkTo }: Expe
                         <div className="timeline-dot"></div>
                         <div className="experience-card">
                             <div
-                                className="experience-header"
+                                className={`experience-header ${defaultExpanded ? 'non-clickable' : ''}`}
                                 onClick={() => toggleExpand(index)}
                             >
                                 <div className="experience-title-section">
@@ -91,14 +94,16 @@ export const Experience = ({ experience, defaultExpanded = false, linkTo }: Expe
                                         </span>
                                     </div>
                                 </div>
-                                <motion.button
-                                    className="expand-button"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    aria-label={expandedIndex === index ? "Collapse" : "Expand"}
-                                >
-                                    {expandedIndex === index ? <FiChevronUp /> : <FiChevronDown />}
-                                </motion.button>
+                                {!defaultExpanded && (
+                                    <motion.button
+                                        className="expand-button"
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        aria-label={expandedIndex === index ? "Collapse" : "Expand"}
+                                    >
+                                        {expandedIndex === index ? <FiChevronUp /> : <FiChevronDown />}
+                                    </motion.button>
+                                )}
                             </div>
                             <AnimatePresence>
                                 {(expandedIndex === index || expandedIndex === -1) && (
