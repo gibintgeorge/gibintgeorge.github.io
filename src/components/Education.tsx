@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 import { FiAward, FiMapPin } from 'react-icons/fi';
 import './Education.css';
 
@@ -12,9 +13,10 @@ interface EducationItem {
 
 interface EducationProps {
     education: EducationItem[];
+    linkTo?: string;
 }
 
-export const Education = ({ education }: EducationProps) => {
+export const Education = ({ education, linkTo }: EducationProps) => {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1
@@ -37,7 +39,13 @@ export const Education = ({ education }: EducationProps) => {
 
     return (
         <section ref={ref} className="education-section">
-            <h2 className="section-title">Education</h2>
+            {linkTo ? (
+                <Link to={linkTo} className="section-title-link">
+                    <h2 className="section-title">Education</h2>
+                </Link>
+            ) : (
+                <h2 className="section-title">Education</h2>
+            )}
             <motion.div
                 className="education-grid"
                 variants={containerVariants}

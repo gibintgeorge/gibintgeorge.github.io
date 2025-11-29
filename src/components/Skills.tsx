@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 import './Skills.css';
 
 interface Skill {
@@ -9,9 +10,10 @@ interface Skill {
 
 interface SkillsProps {
     skills: Skill[];
+    linkTo?: string;
 }
 
-export const Skills = ({ skills }: SkillsProps) => {
+export const Skills = ({ skills, linkTo }: SkillsProps) => {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1
@@ -34,7 +36,13 @@ export const Skills = ({ skills }: SkillsProps) => {
 
     return (
         <section ref={ref} className="skills-section">
-            <h2 className="section-title">Skills & Expertise</h2>
+            {linkTo ? (
+                <Link to={linkTo} className="section-title-link">
+                    <h2 className="section-title">Skills & Expertise</h2>
+                </Link>
+            ) : (
+                <h2 className="section-title">Skills & Expertise</h2>
+            )}
             <motion.div
                 className="skills-grid"
                 variants={containerVariants}

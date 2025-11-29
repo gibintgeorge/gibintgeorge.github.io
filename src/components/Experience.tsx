@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 import { FiChevronDown, FiChevronUp, FiBriefcase, FiMapPin, FiCalendar } from 'react-icons/fi';
 import './Experience.css';
 
@@ -14,10 +15,14 @@ interface ExperienceItem {
 
 interface ExperienceProps {
     experience: ExperienceItem[];
+    defaultExpanded?: boolean;
+    linkTo?: string;
 }
 
-export const Experience = ({ experience }: ExperienceProps) => {
-    const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+export const Experience = ({ experience, defaultExpanded = false, linkTo }: ExperienceProps) => {
+    // When defaultExpanded is true, expand all items (set to -1 to indicate all expanded)
+    // When false, expand only the first item (index 0)
+    const [expandedIndex, setExpandedIndex] = useState<number | null>(defaultExpanded ? -1 : 0);
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1
@@ -44,7 +49,13 @@ export const Experience = ({ experience }: ExperienceProps) => {
 
     return (
         <section ref={ref} className="experience-section">
-            <h2 className="section-title">Professional Experience</h2>
+            {linkTo ? (
+                <Link to={linkTo} className="section-title-link">
+                    <h2 className="section-title">Professional Experience</h2>
+                </Link>
+            ) : (
+                <h2 className="section-title">Professional Experience</h2>
+            )}
             <motion.div
                 className="experience-timeline"
                 variants={containerVariants}
@@ -90,7 +101,7 @@ export const Experience = ({ experience }: ExperienceProps) => {
                                 </motion.button>
                             </div>
                             <AnimatePresence>
-                                {expandedIndex === index && (
+                                {(expandedIndex === index || expandedIndex === -1) && (
                                     <motion.div
                                         className="experience-highlights"
                                         initial={{ height: 0, opacity: 0 }}
