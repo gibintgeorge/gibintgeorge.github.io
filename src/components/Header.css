@@ -145,7 +145,10 @@
     opacity: 1;
 }
 
-.download-button > * {
+.download-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     position: relative;
     z-index: 1;
 }

@@ -79,8 +79,10 @@ export const Header = ({ personalInfo }: HeaderProps) => {
                     download="Gibin_George_Resume.pdf"
                     className="download-button"
                 >
-                    <FiDownload className="download-icon" />
-                    Download Resume
+                    <span className="download-content">
+                        <FiDownload className="download-icon" />
+                        Download Resume
+                    </span>
                 </a>
             </motion.div>
         </motion.header>
