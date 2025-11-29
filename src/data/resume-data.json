@@ -15,20 +15,16 @@
       "items": ["React.js", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS", "Redux", "Zustand", "React Context", "Micro Frontends", "Design Systems"]
     },
     {
-      "category": "Full Stack / Microservices",
-      "items": ["React (front end)", "Node.js (back end)", "Micro Frontend architectures", "microservice-style integrations", "Agile environments"]
+      "category": "Backend & Tools",
+      "items": ["Node.js", "Express.js", "MongoDB","ava (Spring Boot)", "REST APIs", "Microservices Integration", "Puppeteer", "Web Workers"]
+    },
+    {
+      "category": "Testing",
+      "items": ["Jest", "React Testing Library", "Playwright","Enzyme","Karate", "TDD", "CI-integrated Testing Pipelines"]
     },
     {
       "category": "Accessibility",
       "items": ["WCAG Compliance", "Axe Auditor"]
-    },
-    {
-      "category": "Testing",
-      "items": ["Jest", "React Testing Library", "Playwright", "TDD", "CI-integrated Testing Pipelines"]
-    },
-    {
-      "category": "Backend & Tools",
-      "items": ["Node.js", "Express.js", "MongoDB", "REST APIs", "Puppeteer", "Web Workers", "NPM", "Webpack", "Babel"]
     },
     {
       "category": "Cloud & DevOps",
@@ -51,8 +47,12 @@
       "items": ["OAuth 2.0 (3-legged)", "MFA", "Reauthentication Flows"]
     },
     {
-      "category": "Other",
-      "items": ["Basic Java (Spring Boot)", "Performance Optimization", "Worker threads", "Lazy Loading", "Bundle Splitting"]
+      "category": "Mobile Development",
+      "items": ["React Native", "Expo", "React Navigation", "Native Modules", "AsyncStorage", "iOS/Android Deployment", "React Native CLI"]
+    },
+    {
+      "category": "Firebase & Cloud Services",
+      "items": ["Firebase Authentication", "Cloud Firestore", "Firebase Cloud Functions", "Firebase Storage"]
     }
   ],
   "experience": [
