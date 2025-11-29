@@ -1,0 +1,47 @@
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: var(--bg-secondary);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.back-button:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateX(-4px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.back-button svg {
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover svg {
+    transform: translateX(-2px);
+}
+
+.back-button:active {
+    transform: translateX(-2px) scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .back-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
