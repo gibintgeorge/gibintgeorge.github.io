@@ -26,7 +26,7 @@ function App() {
                     </Routes>
                 </div>
                 <footer className="footer">
-                    <p>© {new Date().getFullYear()} {resumeData.personalInfo.name}. Built with React & TypeScript.</p>
+                    <p>© {new Date().getFullYear()} {resumeData.personalInfo.name}</p>
                 </footer>
             </div>
         </Router>
