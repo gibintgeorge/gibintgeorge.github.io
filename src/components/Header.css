@@ -107,22 +107,47 @@
 .download-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 12px 28px;
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--gradient-start);
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border: none;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .download-button:hover {
-    background: rgba(255, 255, 255, 1);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+.download-button:hover::before {
+    opacity: 1;
+}
+
+.download-button > * {
+    position: relative;
+    z-index: 1;
 }
 
 .download-icon {
