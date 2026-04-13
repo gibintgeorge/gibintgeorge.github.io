@@ -75,7 +75,7 @@ export const Header = ({ personalInfo }: HeaderProps) => {
             </motion.div>
             <motion.div className="header-download" variants={itemVariants}>
                 <a 
-                    href="/GibinGeorgeReact.pdf" 
+                    href={`${import.meta.env.BASE_URL}GibinGeorgeFullstack.pdf`}
                     download="Gibin_George_Resume.pdf"
                     className="download-button"
                 >
